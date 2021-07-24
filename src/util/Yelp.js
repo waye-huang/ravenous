@@ -11,7 +11,7 @@ const Yelp = {
       }
     )
       .then((response) => {
-        response.json();
+        return response.json();
       })
       .then((jsonResponse) => {
         console.log('jsonResponse:', jsonResponse);
